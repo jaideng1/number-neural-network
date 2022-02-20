@@ -18,7 +18,7 @@ Play around with it though! (It seems to love the number 4).
 This is also able to run locally with NodeJS for training.   
 To do so, download the repository and extract it from the zip file, then create a folder called `training-data`.   
 You'll have to change the training.js though in order for it to actually run.  
-You also need to put the MNIST `train-images-idx3-ubyte.gz` and "`rain-labels-idx1-ubyte.gz` inside a folder named `mnist` inside the `training-data` folder.
+You also need to put the MNIST `train-images-idx3-ubyte.gz` and `train-labels-idx1-ubyte.gz` inside a folder named `mnist` inside the `training-data` folder.
 I would replace the `testAI(100);` with `trainAI()` in order to do so. You can also change the `epochs` constant around line 78.  
   
 If you want to use a pre-existing training file (created using this program), load it after the `let nn = new DeeperNeuralNetwork()` around line 64.  
