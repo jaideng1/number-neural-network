@@ -39,8 +39,9 @@ function setup() {
     grid.matrix.initializeZeros();
 
     numberNeuralNetwork = new DeeperNeuralNetwork(784, 100, 10);
-
-    numberNeuralNetwork.loadURL("/training-data/1645320483198_data/finished.json");
+    
+    //If you're looking around, here's where you can change the training data.
+    numberNeuralNetwork.loadURL("/1645320483198_data/finished.json");
 }
 
 function getClosestGridPoint(x, y) {
