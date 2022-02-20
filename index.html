@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Number AI</title>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+        <script src="matrix.js"></script>
+        <script src="nn.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="prediction-container hidden" id="prediction-container">
+            <div class="prediction-text">
+                <div class="more-solidified-prediction-panel">
+                <p>Prediction: <span id="prediction"></span></p>
+                <button class="btn" id="close-button" onclick="closePrediction()">Close</button>
+                </div>
+            </div>
+        </div>
+        <div id="links">
+            <div id="link-meat">
+                <a href="https://github.com/jaideng1/number-neural-network" target="_blank">Source Code</a><br/><br/>
+                <a href="https://github.com/jaideng1" target="_blank">Made by jaideng1</a>
+            </div>
+        </div>
+        <div class="prediction-container" id="explination-container">
+            <div class="prediction-text">
+                <div class="more-solidified-prediction-panel smaller-text">
+                <p>This is a small neural network that I (tried) to make using the <a target="_blank" href="http://yann.lecun.com/exdb/mnist/">MNIST DATABASE</a>.</p>
+                <p>Unfortunately, it's not very accurate. I only trained it for an hour though, so it's not too accurate. </p>
+                <p>I would place the blame on: <br/>
+                    1. Accidentally repeating the same training data over and over again.</p>
+                <p>2. Not training it for long enough.</p>
+                <p>3. Accidentally reading the data wrong, either in training or testing.</p>
+                <p>Play around with it though! (It seems to love the number 4).</p>
+                <button onclick="exitExplination()">Continue</button>
+                </div>
+            </div>
+        </div>
+        <div id="canvas-container">
+            <div id="cc">
+            </div>
+            <button class="btn" id="clear-button" onclick="clearMatrix()">Clear</button><button class="btn" id="predict-button" onclick="predictCanvas()">Predict</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "number-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "training.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jaideng1",
+  "license": "MIT",
+  "dependencies": {
+    "node-gzip": "^1.1.2"
+  }
+}
