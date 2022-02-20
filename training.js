@@ -62,6 +62,7 @@ function trainAI() {
         const nowTime = new Date().getTime();
 
         let nn = new DeeperNeuralNetwork(784, 100, 10);
+        /*nn.loadFile("/training_directory/folder/your_training_data_here.json")*/
 
         console.log("Finished loading data, created empty neural network. Took " + Math.floor((nowTime - beforeTime) / 1000) + " seconds to load the data.");
 
@@ -75,7 +76,7 @@ function trainAI() {
             expectedOutputs[expectedOutputs.length - 1][data.labels[i]] = 1;
         }
         
-        const epochs = 1000000;
+        const epochs = 1000000; //Change the number of epochs/how many times it runs the data and improves it.
 
         console.log("Prepared inputs and outputs, running for " + epochs + " epochs.");
         console.log("Using " + data.labels.length + " training samples.");
@@ -154,4 +155,4 @@ async function testAI(amount) {
     });
 }
 
-testAI(100);
+testAI(100); //or trainAI()
