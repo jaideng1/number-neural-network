@@ -3,7 +3,7 @@ A small neural network I (tried) making to recognize numbers from 0 to 9 using t
 
 View at https://jaideng1.github.io/number-neural-network/.  
 
-This is a small neural network that I (tried) to make using the (MNIST DATABASE)[http://yann.lecun.com/exdb/mnist/].  
+This is a small neural network that I (tried) to make using the [MNIST DATABASE](http://yann.lecun.com/exdb/mnist/).  
   
 Unfortunately, it's not very accurate. I only trained it for an hour though, so it's not too accurate.     
 I would place the blame on:  
