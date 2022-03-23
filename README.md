@@ -13,7 +13,7 @@ I would place the blame on:
   
 Play around with it though! (It seems to love the number 4).  
 
-NOTE: I learned that I completely did the derivative of sigmoid wrong (augh). Turns out instead of `s'(x) = 1 * (1 - x)` it's actually `s'(x) = s(x) * (s(x) - x)`. I haven't changed this yet, but I will soon.
+NOTE: I learned that I completely did the derivative of sigmoid wrong (augh). Turns out instead of `s'(x) = 1 * (1 - x)` it's actually `s'(x) = s(x) * (s(x) - x)`, but this neural network runs not using the actual derivative? I learned a lot of this from https://towardsdatascience.com/understanding-and-implementing-neural-networks-in-java-from-scratch-61421bb6352c but adjusted, so I need to learn more about back-propagation to understand what is right.
 
 # Running this locally
 
