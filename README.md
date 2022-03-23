@@ -13,6 +13,8 @@ I would place the blame on:
   
 Play around with it though! (It seems to love the number 4).  
 
+NOTE: I learned that I completely did the derivative of sigmoid wrong (augh). Turns out instead of `s'(x) = 1 * (1 - x)` it's actually `s'(x) = s(x) * (s(x) - x)`. I haven't changed this yet, but I will soon.
+
 # Running this locally
 
 This is also able to run locally with NodeJS for training.   
